@@ -123,23 +123,31 @@ fun TataletakBoxColumnRow(modifier: Modifier) {
     }
     @Composable
     fun TataletakDenganGambarBaru(modifier: Modifier = Modifier) {
-        Box(
+        Column(
             modifier = modifier
                 .fillMaxWidth()
-                .height(250.dp)
-                .background(color = Color.LightGray),
-            contentAlignment = Alignment.Center
+                .padding(16.dp)
         ) {
-            // Memanggil gambar baru dari folder res/drawable (misal: R.drawable.logo_baru)
             val customGambar = painterResource(id = R.drawable.bunga)
 
+            // 1. Menampilkan Gambar
             Image(
                 painter = customGambar,
-                contentDescription = "Ini merupakan Bunga aster (daisy) salah satu tanaman hias dari famili Asteraceae yang dikenal dengan tampilan mahkota bunganya yang melingkar rapi mengelilingi bagian tengah berbentuk cakram. " +
-                        "Secara umum, spesies paling populer seperti English daisy (Bellis perennis) atau Oxeye daisy (Leucanthemum vulgare) memiliki mahkota berwarna putih bersih dengan bagian pusat berwarna kuning terang. " +
-                        "Bunga ini melambangkan kemurnian dan kepolosan, serta memiliki ciri khas menguncup di malam hari dan kembali mekar saat menyambut cahaya matahari di pagi hari. ",
+                contentDescription = "Gambar Bunga Aster", // Untuk aksesibilitas
                 contentScale = ContentScale.Crop,
-                modifier = Modifier.fillMaxWidth()
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(200.dp)
+            )
+
+            Spacer(modifier = Modifier.height(8.dp))
+
+            // 2. Menampilkan Teks Deskripsi secara Visual di Layar
+            Text(
+                text = "Ini merupakan Bunga aster (daisy) salah satu tanaman hias dari famili Asteraceae yang dikenal dengan tampilan mahkota bunganya yang melingkar rapi mengelilingi bagian tengah berbentuk cakram. " +
+                        "Secara umum, spesies paling populer seperti English daisy (Bellis perennis) atau Oxeye daisy (Leucanthemum vulgare) memiliki mahkota berwarna putih bersih dengan bagian pusat berwarna kuning terang. " +
+                        "Bunga ini melambangkan kemurnian dan kepolosan, serta memiliki ciri khas menguncup di malam hari dan kembali mekar saat menyambut cahaya matahari di pagi hari.",
+                fontSize = 14.sp
             )
         }
     }
