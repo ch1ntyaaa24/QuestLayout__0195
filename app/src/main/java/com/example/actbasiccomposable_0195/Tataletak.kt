@@ -45,3 +45,28 @@ fun TataletakRow(modifier: Modifier) {
         Text(text = "Komponen3")
     }
 }
+@Composable
+fun TataletakBox(modifier: Modifier) {
+    Box(
+        modifier = modifier
+            .fillMaxWidth()
+            .height(200.dp)
+            .background(color = Color.Cyan),
+        contentAlignment = Alignment.Center
+    ) {
+        val gambar = painterResource(id = R.drawable.ic_launcher_foreground)
+        Image(
+            painter = gambar,
+            contentDescription = null,
+            contentScale = ContentScale.Fit
+        )
+        Text(
+            text = "My Layout",
+            fontSize = 50.sp,
+            color = Color.Red,
+            fontWeight = FontWeight.Bold,
+            fontFamily = FontFamily.Cursive,
+            modifier = Modifier.align(Alignment.Center)
+        )
+    }
+}
