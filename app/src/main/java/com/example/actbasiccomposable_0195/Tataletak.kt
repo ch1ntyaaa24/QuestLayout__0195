@@ -131,7 +131,7 @@ fun TataletakBoxColumnRow(modifier: Modifier) {
             contentAlignment = Alignment.Center
         ) {
             // Memanggil gambar baru dari folder res/drawable (misal: R.drawable.logo_baru)
-            val customGambar = painterResource(id = R.drawable.Bunga)
+            val customGambar = painterResource(id = R.drawable.bunga)
 
             Image(
                 painter = customGambar,
