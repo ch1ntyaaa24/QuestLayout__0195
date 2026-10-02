@@ -1,4 +1,4 @@
-package com.example.prak2
+package com.example.actbasiccomposable_0195
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -23,7 +23,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.actbasiccomposable_0195.R
 
-
 @Composable
 fun TataletakColumn(modifier: Modifier) {
     Column(
@@ -36,6 +35,7 @@ fun TataletakColumn(modifier: Modifier) {
         Text(text = "Komponen4")
     }
 }
+
 @Composable
 fun TataletakRow(modifier: Modifier) {
     Row(
@@ -47,6 +47,7 @@ fun TataletakRow(modifier: Modifier) {
         Text(text = "Komponen3")
     }
 }
+
 @Composable
 fun TataletakBox(modifier: Modifier) {
     Box(
@@ -72,6 +73,7 @@ fun TataletakBox(modifier: Modifier) {
         )
     }
 }
+
 @Composable
 fun TataletakBoxColumnRow(modifier: Modifier) {
     Column(
@@ -117,6 +119,28 @@ fun TataletakBoxColumnRow(modifier: Modifier) {
                 Text(text = "Col1 Row1 Komponen2")
                 Text(text = "Col1 Row1 Komponen3")
             }
+        }
+    }
+    @Composable
+    fun TataletakDenganGambarBaru(modifier: Modifier = Modifier) {
+        Box(
+            modifier = modifier
+                .fillMaxWidth()
+                .height(250.dp)
+                .background(color = Color.LightGray),
+            contentAlignment = Alignment.Center
+        ) {
+            // Memanggil gambar baru dari folder res/drawable (misal: R.drawable.logo_baru)
+            val customGambar = painterResource(id = R.drawable.Bunga)
+
+            Image(
+                painter = customGambar,
+                contentDescription = "Ini merupakan Bunga aster (daisy) salah satu tanaman hias dari famili Asteraceae yang dikenal dengan tampilan mahkota bunganya yang melingkar rapi mengelilingi bagian tengah berbentuk cakram. " +
+                        "Secara umum, spesies paling populer seperti English daisy (Bellis perennis) atau Oxeye daisy (Leucanthemum vulgare) memiliki mahkota berwarna putih bersih dengan bagian pusat berwarna kuning terang. " +
+                        "Bunga ini melambangkan kemurnian dan kepolosan, serta memiliki ciri khas menguncup di malam hari dan kembali mekar saat menyambut cahaya matahari di pagi hari. ",
+                contentScale = ContentScale.Crop,
+                modifier = Modifier.fillMaxWidth()
+            )
         }
     }
 }
