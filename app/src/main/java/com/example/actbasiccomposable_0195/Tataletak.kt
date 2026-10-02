@@ -70,3 +70,27 @@ fun TataletakBox(modifier: Modifier) {
         )
     }
 }
+@Composable
+fun TataletakBoxColumnRow(modifier: Modifier) {
+    Column(
+        modifier = modifier.padding(top = 20.dp, start = 20.dp, end = 20.dp)
+    ) {
+        Column {
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceEvenly
+            ) {
+                Text(text = "Row1 Komponen1")
+                Text(text = "Row1 Komponen2")
+                Text(text = "Row1 Komponen3")
+            }
+            Spacer(modifier = Modifier.height(10.dp))
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceEvenly
+            ) {
+                Text(text = "Row2 Komponen1")
+                Text(text = "Row2 Komponen2")
+                Text(text = "Row2 Komponen3")
+            }
+        }
