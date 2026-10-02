@@ -94,3 +94,27 @@ fun TataletakBoxColumnRow(modifier: Modifier) {
                 Text(text = "Row2 Komponen3")
             }
         }
+        Spacer(modifier = Modifier.height(10.dp))
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(300.dp)
+                .background(color = Color.Cyan),
+            contentAlignment = Alignment.Center
+        ) {
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                val gambar = painterResource(id = R.drawable.ic_launcher_foreground)
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    contentScale = ContentScale.Fit
+                )
+                Text(text = "Col1 Row1 Komponen1")
+                Text(text = "Col1 Row1 Komponen2")
+                Text(text = "Col1 Row1 Komponen3")
+            }
+        }
+    }
+}
