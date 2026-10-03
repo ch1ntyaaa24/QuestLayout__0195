@@ -65,13 +65,13 @@ fun TugasScreen() {
                 fontWeight = FontWeight.Bold
             )
             Text(
-                text = "Feels Like: 33",
+                text = "Berawan / Partly cloudy",
                 color = Color.Blue,
                 fontSize = 16.sp,
                 fontWeight = FontWeight.Bold
             )
             Text(
-                text = "20000140001",
+                text = "82°F (≈28°C)",
                 color = Color.Black,
                 fontSize = 24.sp,
                 fontWeight = FontWeight.Bold
