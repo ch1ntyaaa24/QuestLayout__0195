@@ -59,13 +59,13 @@ fun TugasScreen() {
             Spacer(modifier = Modifier.height(48.dp))
 
             Text(
-                text = "Nama",
+                text = "Cuaca",
                 color = Color.Red,
                 fontSize = 16.sp,
                 fontWeight = FontWeight.Bold
             )
             Text(
-                text = "Pascal Pahlevi Pasha",
+                text = "Feels Like: 33",
                 color = Color.Blue,
                 fontSize = 16.sp,
                 fontWeight = FontWeight.Bold
