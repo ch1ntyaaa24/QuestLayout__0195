@@ -37,13 +37,13 @@ fun TugasScreen() {
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Text(
-                text = "Login",
+                text = "Bantul",
                 color = Color.Blue,
                 fontSize = 28.sp,
                 fontWeight = FontWeight.Bold
             )
             Text(
-                text = "Ini adalah halaman login,",
+                text = "Estimasi Cuaca,",
                 color = Color.White,
                 fontSize = 14.sp
             )
