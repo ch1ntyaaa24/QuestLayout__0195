@@ -29,8 +29,7 @@ import androidx.compose.ui.unit.sp
 @Composable
 fun ActivitasPertama(modifier: Modifier) {
     Column(
-        modifier = Modifier
-            .padding(top = 100.dp)
+        modifier = Modifier.padding(top = 100.dp)
             .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
@@ -71,7 +70,7 @@ fun ActivitasPertama(modifier: Modifier) {
                     Text(
                         text = stringResource(id = R.string.alamat),
                         fontSize = 20.sp,
-                        color = Color.Yellow,
+                        color = Color.Green,
                         modifier = Modifier.padding(top = 10.dp)
                     )
                 }
