@@ -1,4 +1,4 @@
-package com.example.pertemuan4.ui.theme
+package com.example.pertemuan4
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
@@ -25,24 +25,32 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun ActifitasPertama(modifier: Modifier) {
+fun ActivitasPertama(modifier: Modifier) {
     Column(
-        modifier = Modifier.padding(top = 100.dp)
+        modifier = Modifier
+            .padding(top = 100.dp)
             .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
-            text = stringResource(id = R.string.prodi),
+            stringResource(id = R.string.prodi),
             fontSize = 35.sp,
             fontWeight = FontWeight.Bold
         )
         Text(
-            text = stringResource(id = R.string.univ),
+            stringResource(id = R.string.univ),
             fontSize = 22.sp
         )
         Spacer(modifier = Modifier.height(25.dp))
         Card(
             modifier = Modifier
                 .fillMaxWidth(fraction = 1f)
-        )
+                .padding(all = 12.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = colorResource(id = R.color.card_e_bg)
+            )
+        ) {
+
+        }
     }
+}
