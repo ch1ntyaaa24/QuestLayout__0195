@@ -177,6 +177,7 @@ fun PersonCard(
                         color = colorResource(mahasiswa.phoneColor),
                         fontSize = dimensionResource(R.dimen.text_detail).value.sp
                     )
+                }
             }
         }
     }
