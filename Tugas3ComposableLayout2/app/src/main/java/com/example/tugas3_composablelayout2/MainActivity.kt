@@ -120,14 +120,21 @@ fun MainScreen() {
                 PersonCard(mahasiswa = mahasiswa)
             }
         }
+        Spacer(modifier = Modifier.weight(1f))
+
+        Text(
+            text = stringResource(R.string.footer_copyright),
+            color = colorResource(R.color.text_primary),
+            fontSize = dimensionResource(R.dimen.text_footer).value.sp,
+            modifier = Modifier.padding(bottom = dimensionResource(R.dimen.footer_padding))
+        )
 
     }
 }
 
-@Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
-    Tugas3ComposableLayout2Theme {
-        Greeting("Android")
-    }
-}
+fun PersonCard(
+    mahasiswa: Mahasiswa,
+    modifier: Modifier = Modifier
+) {
+
