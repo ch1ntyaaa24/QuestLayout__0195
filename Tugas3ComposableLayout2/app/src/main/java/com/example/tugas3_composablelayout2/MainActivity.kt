@@ -161,6 +161,17 @@ fun PersonCard(
                     .padding(horizontal = dimensionResource(R.dimen.card_padding)),
                 verticalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.text_gap))
             ) {
+                Text(
+                    text = stringResource(mahasiswa.name),
+                    color = colorResource(mahasiswa.nameColor),
+                    fontSize = dimensionResource(
+                        if (isCursive) R.dimen.text_name_cursive else R.dimen.text_name
+                    ).value.sp,
+                    fontWeight = if (isCursive) FontWeight.Normal else FontWeight.Bold,
+                    fontStyle = if (isCursive) FontStyle.Italic else FontStyle.Normal,
+                    fontFamily = nameFontFamily
+                )
+            }
         }
     }
 }
