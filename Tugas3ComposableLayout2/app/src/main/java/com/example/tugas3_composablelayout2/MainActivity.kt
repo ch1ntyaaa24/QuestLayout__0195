@@ -70,6 +70,16 @@ private val daftarMahasiswa = listOf(
         phoneColor = R.color.text_cyan,
         addressColor = R.color.text_white
     ),
+    Mahasiswa(
+        name = R.string.name_alfian,
+        phone = R.string.phone_alfian,
+        address = R.string.address_alfian,
+        cardColor = R.color.card_green,
+        nameColor = R.color.text_white,
+        phoneColor = R.color.text_cyan,
+        addressColor = R.color.text_white
+    )
+)
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
