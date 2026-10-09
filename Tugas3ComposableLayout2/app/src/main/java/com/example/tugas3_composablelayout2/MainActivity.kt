@@ -153,6 +153,9 @@ fun PersonCard(
                 .padding(dimensionResource(R.dimen.card_padding)),
             verticalAlignment = Alignment.CenterVertically
         ) {
+            CardLogo()
+        }
     }
+}
 
 
