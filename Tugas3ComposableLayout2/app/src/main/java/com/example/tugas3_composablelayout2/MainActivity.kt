@@ -184,6 +184,7 @@ fun PersonCard(
                     fontSize = dimensionResource(R.dimen.text_detail).value.sp
                 )
             }
+            CardLogo()
         }
     }
 }
