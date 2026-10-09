@@ -140,4 +140,12 @@ fun PersonCard(
     val isCursive = mahasiswa.nameFont != null
     val nameFontFamily = mahasiswa.nameFont?.let { FontFamily(Font(it)) }
 
+    Card(
+        modifier = modifier.fillMaxWidth(),
+        shape = RoundedCornerShape(dimensionResource(R.dimen.card_corner)),
+        colors = CardDefaults.cardColors(
+            containerColor = colorResource(mahasiswa.cardColor)
+        )
+    ) {
+
 
