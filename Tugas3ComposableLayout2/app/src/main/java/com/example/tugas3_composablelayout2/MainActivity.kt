@@ -178,6 +178,11 @@ fun PersonCard(
                         fontSize = dimensionResource(R.dimen.text_detail).value.sp
                     )
                 }
+                Text(
+                    text = stringResource(mahasiswa.address),
+                    color = colorResource(mahasiswa.addressColor),
+                    fontSize = dimensionResource(R.dimen.text_detail).value.sp
+                )
             }
         }
     }
