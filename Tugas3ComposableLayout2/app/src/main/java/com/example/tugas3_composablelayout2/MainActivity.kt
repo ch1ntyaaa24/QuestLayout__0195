@@ -198,4 +198,10 @@ private fun CardLogo() {
     )
 }
 
+@Preview(showBackground = true)
+@Composable
+fun MainScreenPreview() {
+    MainScreen()
+}
+
 
