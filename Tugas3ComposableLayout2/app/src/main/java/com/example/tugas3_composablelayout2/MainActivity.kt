@@ -147,5 +147,12 @@ fun PersonCard(
             containerColor = colorResource(mahasiswa.cardColor)
         )
     ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(dimensionResource(R.dimen.card_padding)),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+    }
 
 
