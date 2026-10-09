@@ -171,6 +171,12 @@ fun PersonCard(
                     fontStyle = if (isCursive) FontStyle.Italic else FontStyle.Normal,
                     fontFamily = nameFontFamily
                 )
+                mahasiswa.phone?.let { phone ->
+                    Text(
+                        text = stringResource(phone),
+                        color = colorResource(mahasiswa.phoneColor),
+                        fontSize = dimensionResource(R.dimen.text_detail).value.sp
+                    )
             }
         }
     }
