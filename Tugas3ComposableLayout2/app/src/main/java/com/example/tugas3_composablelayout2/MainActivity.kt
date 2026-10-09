@@ -105,6 +105,13 @@ fun MainScreen() {
                 fontWeight = FontWeight.Bold,
                 textAlign = TextAlign.Center
             )
+            Text(
+                text = stringResource(R.string.header_subtitle),
+                color = colorResource(R.color.text_primary),
+                fontSize = dimensionResource(R.dimen.text_subtitle).value.sp,
+                fontWeight = FontWeight.Bold,
+                textAlign = TextAlign.Center
+            )
 
         }
     }
