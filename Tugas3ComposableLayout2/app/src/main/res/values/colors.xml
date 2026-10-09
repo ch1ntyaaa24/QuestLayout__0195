@@ -8,4 +8,7 @@
     <color name="card_blue">#0000FF</color>
     <color name="card_green">#006400</color>
 
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_yellow">#FFFF00</color>
+    <color name="text_cyan">#00FFFF</color>
 </resources>
