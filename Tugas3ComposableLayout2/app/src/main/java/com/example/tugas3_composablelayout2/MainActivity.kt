@@ -82,12 +82,14 @@ private val daftarMahasiswa = listOf(
 )
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
+fun MainScreen() {
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(colorResource(R.color.screen_background))
+            .padding(horizontal = dimensionResource(R.dimen.screen_padding)),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
 
 @Preview(showBackground = true)
 @Composable
