@@ -13,7 +13,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
@@ -32,7 +31,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
-import com.example.questtugaslayout.model.Maha
+import com.example.tugas3_composablelayout2.model.Mahasiswa
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -43,37 +42,38 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+// Data kartu (semua mengacu ke resource)
 private val daftarMahasiswa = listOf(
     Mahasiswa(
-        name = R.string.name_bambang,
-        address = R.string.address_bambang,
+        name = R.string.name_julian,
+        address = R.string.address_julian,
         cardColor = R.color.card_gray,
         nameColor = R.color.text_white,
         phoneColor = R.color.text_cyan,
         addressColor = R.color.text_yellow,
-        nameFont = R.font.dancing_script
     ),
     Mahasiswa(
-        name = R.string.name_gibran,
-        phone = R.string.phone_gibran,
-        address = R.string.address_gibran,
+        name = R.string.name_mawar,
+        phone = R.string.phone_mawar,
+        address = R.string.address_mawar,
         cardColor = R.color.card_purple,
         nameColor = R.color.text_white,
         phoneColor = R.color.text_cyan,
         addressColor = R.color.text_yellow
-    ), Mahasiswa(
-        name = R.string.name_zhilal,
-        phone = R.string.phone_zhilal,
-        address = R.string.address_zhilal,
+    ),
+    Mahasiswa(
+        name = R.string.name_eka,
+        phone = R.string.phone_eka,
+        address = R.string.address_eka,
         cardColor = R.color.card_blue,
         nameColor = R.color.text_white,
         phoneColor = R.color.text_cyan,
         addressColor = R.color.text_white
     ),
     Mahasiswa(
-        name = R.string.name_alfian,
-        phone = R.string.phone_alfian,
-        address = R.string.address_alfian,
+        name = R.string.name_alfat,
+        phone = R.string.phone_alfat,
+        address = R.string.address_alfat,
         cardColor = R.color.card_green,
         nameColor = R.color.text_white,
         phoneColor = R.color.text_cyan,
@@ -113,6 +113,8 @@ fun MainScreen() {
                 textAlign = TextAlign.Center
             )
         }
+
+        // Daftar Card: memakai 1 fungsi PersonCard yang sama
         Column(
             verticalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.card_spacing))
         ) {
@@ -120,6 +122,8 @@ fun MainScreen() {
                 PersonCard(mahasiswa = mahasiswa)
             }
         }
+
+        // Dorong footer ke bawah
         Spacer(modifier = Modifier.weight(1f))
 
         Text(
@@ -128,10 +132,12 @@ fun MainScreen() {
             fontSize = dimensionResource(R.dimen.text_footer).value.sp,
             modifier = Modifier.padding(bottom = dimensionResource(R.dimen.footer_padding))
         )
-
     }
 }
 
+/**
+ * Satu fungsi Card yang dipakai ulang oleh seluruh item.
+ */
 @Composable
 fun PersonCard(
     mahasiswa: Mahasiswa,
@@ -184,6 +190,7 @@ fun PersonCard(
                     fontSize = dimensionResource(R.dimen.text_detail).value.sp
                 )
             }
+
             CardLogo()
         }
     }
@@ -203,5 +210,3 @@ private fun CardLogo() {
 fun MainScreenPreview() {
     MainScreen()
 }
-
-
