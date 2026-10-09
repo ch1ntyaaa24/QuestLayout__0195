@@ -6,14 +6,14 @@
     <string name="footer_copyright">Copyright, 2026</string>
     <string name="logo_description">Logo Universitas Muhammadiyah Yogyakarta</string>
 
-    <string name="name_bambang">Bambang Sumantri</string>
-    <string name="address_bambang">Turi, Sleman</string>
+    <string name="name_julian">Juliansyah Bani</string>
+    <string name="address_julian">Kasihan, Bantul</string>
 
-    <string name="name_gibran">Gibran Fathoni</string>
-    <string name="phone_gibran">085436874190</string>
-    <string name="address_gibran">Kasihan, Bantul</string>
+    <string name="name_mawar">Mawar Putri Utami</string>
+    <string name="phone_mawar">085436874913</string>
+    <string name="address_mawar">Depok, Seleman</string>
 
-    <string name="name_zhilal">Zhilal Fadhilah</string>
+    <string name="name_eka">Zhilal Fadhilah</string>
     <string name="phone_zhilal">085436874190</string>
     <string name="address_zhilal">Depok, Sleman</string>
 
