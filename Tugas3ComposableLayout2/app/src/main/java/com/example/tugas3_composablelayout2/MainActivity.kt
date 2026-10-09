@@ -98,6 +98,15 @@ fun MainScreen() {
             ),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
+            Text(
+                text = stringResource(R.string.header_title),
+                color = colorResource(R.color.text_primary),
+                fontSize = dimensionResource(R.dimen.text_title).value.sp,
+                fontWeight = FontWeight.Bold,
+                textAlign = TextAlign.Center
+            )
+
+        }
     }
 
 @Preview(showBackground = true)
