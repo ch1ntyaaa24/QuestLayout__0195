@@ -137,4 +137,7 @@ fun PersonCard(
     mahasiswa: Mahasiswa,
     modifier: Modifier = Modifier
 ) {
+    val isCursive = mahasiswa.nameFont != null
+    val nameFontFamily = mahasiswa.nameFont?.let { FontFamily(Font(it)) }
+
 
