@@ -9,4 +9,11 @@
     <dimen name="logo_size">64dp</dimen>
     <dimen name="text_gap">4dp</dimen>
     <dimen name="footer_padding">16dp</dimen>
+
+    <dimen name="text_title">28sp</dimen>
+    <dimen name="text_subtitle">14sp</dimen>
+    <dimen name="text_name">20sp</dimen>
+    <dimen name="text_name_cursive">22sp</dimen>
+    <dimen name="text_detail">14sp</dimen>
+    <dimen name="text_footer">12sp</dimen>
 </resources>
