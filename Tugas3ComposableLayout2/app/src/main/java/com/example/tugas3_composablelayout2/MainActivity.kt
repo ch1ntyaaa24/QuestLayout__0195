@@ -112,9 +112,17 @@ fun MainScreen() {
                 fontWeight = FontWeight.Bold,
                 textAlign = TextAlign.Center
             )
-
         }
+        Column(
+            verticalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.card_spacing))
+        ) {
+            daftarMahasiswa.forEach { mahasiswa ->
+                PersonCard(mahasiswa = mahasiswa)
+            }
+        }
+
     }
+}
 
 @Preview(showBackground = true)
 @Composable
