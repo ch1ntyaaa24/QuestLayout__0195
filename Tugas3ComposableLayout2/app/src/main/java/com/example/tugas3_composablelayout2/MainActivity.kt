@@ -43,6 +43,16 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+private val daftarMahasiswa = listOf(
+    Mahasiswa(
+        name = R.string.name_bambang,
+        address = R.string.address_bambang,
+        cardColor = R.color.card_gray,
+        nameColor = R.color.text_white,
+        phoneColor = R.color.text_cyan,
+        addressColor = R.color.text_yellow,
+        nameFont = R.font.dancing_script
+    ),
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
