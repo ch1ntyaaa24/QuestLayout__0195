@@ -90,6 +90,15 @@ fun MainScreen() {
             .padding(horizontal = dimensionResource(R.dimen.screen_padding)),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
+        // Header
+        Column(
+            modifier = Modifier.padding(
+                top = dimensionResource(R.dimen.header_top_padding),
+                bottom = dimensionResource(R.dimen.header_bottom_padding)
+            ),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+    }
 
 @Preview(showBackground = true)
 @Composable
