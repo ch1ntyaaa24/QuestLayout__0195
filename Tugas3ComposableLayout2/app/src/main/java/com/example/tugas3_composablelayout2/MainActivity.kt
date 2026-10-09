@@ -154,6 +154,13 @@ fun PersonCard(
             verticalAlignment = Alignment.CenterVertically
         ) {
             CardLogo()
+
+            Column(
+                modifier = Modifier
+                    .weight(1f)
+                    .padding(horizontal = dimensionResource(R.dimen.card_padding)),
+                verticalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.text_gap))
+            ) {
         }
     }
 }
